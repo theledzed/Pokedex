@@ -16,7 +16,7 @@ const PokemonList = () => {
  * I get the list of pokemons
  */
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
       .then((response) => {
         return response.json();
       })
